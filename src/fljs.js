@@ -1,4 +1,4 @@
-export default class Fljs {
+export class Fljs {
     constructor() {
         this.storeInstances = [];
     }
@@ -7,3 +7,5 @@ export default class Fljs {
         this.observer = observer;
     }
 }
+
+export default new Fljs();

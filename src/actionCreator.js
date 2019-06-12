@@ -43,12 +43,6 @@ class ActionCreator {
         }
         BaseStore.handle({action: action.name, payload});
     }
-
-    // createBatch(actions) {
-    //     actions.forEach( action => {
-    //         this.create(action);
-    //     });
-    // }
 }
 
 export default new ActionCreator();
