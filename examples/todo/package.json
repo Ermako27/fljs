@@ -1,0 +1,48 @@
+{
+  "name": "frontend",
+  "version": "v0.0.1",
+  "description": "Studtool frontend",
+  "main": "public/src/script.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studtool/frontend.git"
+  },
+  "author": "ermakov maxim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/studtool/frontend/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "homepage": "https://github.com/studtool/frontend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "express": "^4.16.3",
+    "express-history-api-fallback": "^2.2.1",
+    "express-http-proxy": "^1.4.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-test-renderer": "^16.8.6",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.1.0",
+    "bus-graph": "0.0.5"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  }
+}
