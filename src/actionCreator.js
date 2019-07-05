@@ -35,7 +35,7 @@ class ActionCreator {
             if (actionData) {
                 /**
                  * бросить error о том что нельзя передавать данные
-                 * вместе с action, не описав при это body для данных
+                 * вместе с action, не описав при этом body для данных
                  * этого action
                  */
                 throw new NoActionBodyError();
