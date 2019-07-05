@@ -13,8 +13,9 @@ const TodoItem = ({onClick, text, completeStatus}) => {
 
 export default TodoItem;
 
+
 TodoItem.propTypes = {
     onClick: PropTypes.func.isRequired,
     text: PropTypes.string.isRequired,
-    completeStatus: PropTypes.bool.isRequired
+    completeStatus: PropTypes.bool.isRequired,
 };
