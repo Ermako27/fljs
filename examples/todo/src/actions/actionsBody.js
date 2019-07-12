@@ -1,11 +1,11 @@
 export const addTodoActionBody = {
-    todoValue: ''
+    todoValue: '',
 };
 
 export const completeTodoActionBody = {
-    id: ''
+    id: '',
 };
 
 export const setFilterActionBody = {
-    filter: ''
+    filter: '',
 };

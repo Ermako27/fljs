@@ -12,6 +12,7 @@ module.exports = {
         ]
     ],
     plugins: [
-        ['@babel/proposal-object-rest-spread', {loose: true}]
+        ["@babel/proposal-object-rest-spread", {loose: true}],
+        ["@babel/plugin-transform-react-jsx"]
     ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "fljs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "implementation of flux architecture",
   "scripts": {
     "clean": "rimraf lib dist es coverage",
@@ -51,6 +51,9 @@
     "@babel/node": "^7.4.5",
     "@babel/plugin-external-helpers": "^7.2.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-react-display-name": "^7.2.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.4.5",
     "eslint": "^5.16.0",
     "eslint-config-google": "^0.13.0",
@@ -59,15 +62,25 @@
     "husky": "^2.4.0",
     "lint-staged": "^8.2.0",
     "prettier": "1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-test-renderer": "^16.8.6",
     "rimraf": "^2.6.3",
     "rollup": "^1.14.6",
     "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.1",
     "rollup-plugin-node-resolve": "^5.0.1",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-terser": "^5.0.0"
   },
   "dependencies": {
-    "loose-envify": "^1.4.0"
+    "hoist-non-react-statics": "^3.3.0",
+    "loose-envify": "^1.4.0",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
   },
   "npmName": "fljs",
   "sideEffects": false

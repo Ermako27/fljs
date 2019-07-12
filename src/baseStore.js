@@ -2,7 +2,6 @@ import Fljs from './fljs';
 
 export default class BaseStore {
     constructor(state = {}) {
-        this.initialState = {...state};
         this.state = {...state};
         this.handledActions = this.getHandledActions();
         this.subscribedComponents = [];
@@ -11,10 +10,6 @@ export default class BaseStore {
 
     getState() {
         return this.state;
-    }
-
-    getInitialState() {
-        return this.initialState;
     }
 
     /**
@@ -99,6 +94,7 @@ export default class BaseStore {
                 );
             } else {
                 // если колбэка нет то просто емитим
+                // TODO избаиться от обсервера
                 Fljs.observer.emit(this.handledActions[action].arguments);
             }
         }

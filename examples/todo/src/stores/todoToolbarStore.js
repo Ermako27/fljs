@@ -1,22 +1,22 @@
-import {BaseStore} from '../../../../src/index';
+import {BaseStore} from '../../../../lib/fljs';
 import TodoToolbarLogic from './todoToolbarLogic';
 
 const initialState = {
     links: {
         SHOW_ALL: {
             filterName: 'SHOW_ALL',
-            active: true
+            active: true,
         },
         SHOW_ACTIVE: {
             filterName: 'SHOW_ACTIVE',
-            active: false
+            active: false,
         },
         SHOW_COMPLETE: {
             filterName: 'SHOW_COMPLETE',
-            active: false
-        }
+            active: false,
+        },
     },
-    currentFilter: 'SHOW_ALL'
+    currentFilter: 'SHOW_ALL',
 };
 
 class TodoToolbarStore extends BaseStore {
@@ -32,9 +32,9 @@ class TodoToolbarStore extends BaseStore {
                     this.deliverState(args);
                 },
                 arguments: {
-                    state: this.state
-                }
-            }
+                    state: this.state,
+                },
+            },
         };
     }
 }
