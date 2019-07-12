@@ -3,7 +3,7 @@ class TodoListLogic {
         state.todos.push({
             id: state.todos.length + 1,
             text: payload.todoValue,
-            completeStatus: false
+            completeStatus: false,
         });
     }
 

@@ -4,17 +4,18 @@ import ReactDOM from 'react-dom';
 import Bus from 'bus-graph';
 import Fljs from '../../../src/fljs';
 
-import Addtodo from './components/addTodo';
-import TodoList from './components/todoList';
-import TodoToolBar from './components/todoToolBar';
+import AddTodoContainer from './containers/addTodoContainer';
+import TodoListContainer from './containers/todoListContainer';
+import TodoToolBarContainer from './containers/todoToolBarContainer';
+
 
 Fljs.setObserver(Bus);
 
 const App = () => (
     <div>
-        <Addtodo />
-        <TodoList />
-        <TodoToolBar />
+        <AddTodoContainer />
+        <TodoListContainer />
+        <TodoToolBarContainer />
     </div>
 );
 

@@ -24,5 +24,5 @@ export default ToolbarLink;
 ToolbarLink.propTypes = {
     active: PropTypes.bool.isRequired,
     children: PropTypes.node.isRequired,
-    onClick: PropTypes.func.isRequired
+    onClick: PropTypes.func.isRequired,
 };

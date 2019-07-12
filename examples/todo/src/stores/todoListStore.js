@@ -1,4 +1,4 @@
-import {BaseStore} from '../../../../src/index';
+import {BaseStore} from '../../../../lib/fljs';
 import TodoListLogic from './todoListLogic';
 
 const initialState = {
@@ -6,10 +6,10 @@ const initialState = {
         {
             id: '1',
             text: 'js rules',
-            completeStatus: false
-        }
+            completeStatus: false,
+        },
     ],
-    currentFilter: 'SHOW_ALL'
+    currentFilter: 'SHOW_ALL',
 };
 
 class TodoListStore extends BaseStore {
@@ -25,8 +25,8 @@ class TodoListStore extends BaseStore {
                     this.deliverState(args);
                 },
                 arguments: {
-                    state: this.state
-                }
+                    state: this.state,
+                },
             },
             COMPLETE_TODO: {
                 callback: args => {
@@ -34,8 +34,8 @@ class TodoListStore extends BaseStore {
                     this.deliverState(args);
                 },
                 arguments: {
-                    state: this.state
-                }
+                    state: this.state,
+                },
             },
             SET_FILTER: {
                 callback: args => {
@@ -43,9 +43,9 @@ class TodoListStore extends BaseStore {
                     this.deliverState(args);
                 },
                 arguments: {
-                    state: this.state
-                }
-            }
+                    state: this.state,
+                },
+            },
         };
     }
 }
